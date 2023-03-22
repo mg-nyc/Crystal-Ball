@@ -1,5 +1,6 @@
-# Message Generator Program
-Every time a user runs a program, they should get a new, randomized output. You’re welcome to take the project in a couple of different forms, like an astrology generator, inspirational message, or nonsensical jokes. To make your program truly random, the message that it outputs should be made up of at least three different pieces of data. Take what you know of JavaScript syntax so far to build the program and customize it to your liking.
+# Crystal Ball
+Every time a user runs the program, they get a new, randomized output about future , personal traits, mental state and things to reflect upon.  
+Randomized output message is made up of four different pieces of data stored in an object of arrays.
 
 ## Project Objectives:
 + Build a message generator program using JavaScript
