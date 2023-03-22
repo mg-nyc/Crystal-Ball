@@ -1,5 +1,5 @@
 # Crystal Ball
-Every time a user runs the program, they get a new, randomized output about future , personal traits, mental state and things to reflect upon.  
+Every time a user runs the program they get a new randomized output about their future , personal traits, mental state and questions they should to reflect upon.  
 Randomized output message is made up of four different pieces of data stored in an object of arrays.
 
 ## Project Objectives:

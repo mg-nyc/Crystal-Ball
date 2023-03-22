@@ -18,10 +18,10 @@ crystalBall = {
 
     //You can be +
     mentalState: [
-        ' confident about ',
-        ' worried about ',
-        ' anxious about ',
-        ' unsure about ',
+        '🤩 confident about ',
+        '😟 worried about ',
+        '😰 anxious about ',
+        '🤔 unsure about ',
     ],
 
     traits: [
@@ -29,11 +29,11 @@ crystalBall = {
         'being patient and grounded in your approach to relationships and personal growth',
         'being social and outgoing in your personal and professional life',
         'being confident and assertive in pursuing your goals and taking risk',
-        'physical health and well-being',
+        'your physical health and well-being',
         'building meaningful relationships and pursuing creative interests',
         'your personal transformation and growth',
         'taking the road less traveled',
-        'building stable and meaningful relationship',
+        'building a stable and meaningful relationship',
     ],
 
     reflectUpon: [
@@ -47,3 +47,29 @@ crystalBall = {
     ],
 }
 
+const randMessageIndex = arrLen => Math.floor(Math.random() * arrLen);
+
+const randMessage = prop => {
+    const arrLen =  crystalBall[prop].length;
+    const randIndex = randMessageIndex(arrLen);
+    return crystalBall[prop][randIndex];
+}
+
+const crystalBallMessage = () =>{
+    let x = '';
+
+    x = randMessage('mentalState') + randMessage('traits');
+    const traits = `You can be ${x}.`;
+
+    x = randMessage('future');
+    const future = `You may experience ${x}...`;
+
+    x = randMessage('reflectUpon');
+    const reflectUpon = `Take some time to reflect upon:\n${x}`;
+
+    return  `${traits}\n\n${future}\n\n${reflectUpon}\n`;
+    
+};
+
+console.log(crystalBallMessage());
+// console.log(String.fromCodePoint(0x1F621));
